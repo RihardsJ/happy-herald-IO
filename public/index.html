@@ -4,21 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/public/style.css" type="text/css" />
     <title>Happy Herald IO</title>
   </head>
   <body>
     <header>
-      <img src="/public/images/FAC20-logo.jpg" alt="FAC20 log" />
-      <h1>Happy Herald IO</h1>
-      <div id="participants"></div>
+      <div id="banner">
+        <img id="logo" src="/public/favicon.ico" alt="FAC20 logo" />
+        <h1 id="title">Happy Herald IO</h1>
+      </div>
     </header>
     <main>
+      <div id="participants"></div>
       <ul id="messageBoard"></ul>
     </main>
     <footer>
       <form id="chatForm">
-        <input id="userInput" type="text" autocomplete="off" required />
+        <input id="userInput" type="text" placeholder="message here" autocomplete="off" required />
         <button>Send</button>
       </form>
     </footer>

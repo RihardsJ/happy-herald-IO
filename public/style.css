@@ -1,0 +1,69 @@
+:root {
+  /* color variables */
+  --yellow: hsl(58, 100%, 50%);
+  --red: hsl(353, 75%, 41%);
+
+  /* font variables */
+  --trispace-font: "Trispace", sans-serif;
+}
+
+/* header element styling */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#banner {
+  display: flex;
+}
+
+#logo {
+  margin: 1%;
+  width: 75px;
+  height: auto;
+}
+
+/* body element styling */
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--trispace-font);
+}
+
+#messageBoard {
+  list-style: none;
+}
+
+/* footer element styling */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#chatForm {
+  padding: 3%;
+  border-top: 1;
+  border-top-style: dashed;
+  width: 100%;
+}
+
+#userInput,
+#chatForm button {
+  font-size: 1.4rem;
+  padding: 0.2em;
+}
+
+#userInput {
+  width: 70%;
+}
+
+#chatForm button {
+  font-family: inherit;
+  background-color: var(--red);
+  color: var(--yellow);
+  width: 20%;
+}
